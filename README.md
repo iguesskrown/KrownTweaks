@@ -44,9 +44,3 @@ Commands & Permissions
 Building
 
 Requires Java 21+ and Maven.
-
-```bash
-mvn clean package
-```
-
-The compiled JAR will be output to `target/KrownTweaks-1.0.1.jar`.
