@@ -6,7 +6,7 @@ It introduces a dedicated Quick Buy layout editor (`/shopedit`), direct arena pl
 
 ---
 
-## ✨ Features
+Features
 
 - **Quick Buy Layout Editor (`/shopedit`)**:
   - Open and configure the Hypixel-style Quick Buy shop layout anywhere (lobby or in-game).
@@ -30,7 +30,7 @@ It introduces a dedicated Quick Buy layout editor (`/shopedit`), direct arena pl
 
 ---
 
-## 📋 Commands & Permissions
+Commands & Permissions
 
 | Command | Aliases | Permission | Description |
 | :--- | :--- | :--- | :--- |
@@ -41,7 +41,7 @@ It introduces a dedicated Quick Buy layout editor (`/shopedit`), direct arena pl
 
 ---
 
-## 🛠️ Building
+Building
 
 Requires Java 21+ and Maven.
 
