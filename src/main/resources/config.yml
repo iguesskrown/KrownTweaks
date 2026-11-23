@@ -1,0 +1,89 @@
+# ========================================================= #
+#                   KrownTweaks Configuration               #
+#              MBedwars Addon for Minecraft 1.21.1           #
+# ========================================================= #
+
+# Chat message prefix
+prefix: "&8[&6Krown&eTweaks&8]&r "
+
+# --------------------------------------------------------- #
+# /shopedit Settings
+# --------------------------------------------------------- #
+shopedit:
+  # Enable or disable the /shopedit command
+  enabled: true
+  
+  # Target shop layout to open for Quick Buy editing.
+  # "HypixelV2" is the standard layout featuring Quick Buy.
+  layout: "HypixelV2"
+  
+  # Allow players to use /shopedit in the lobby / outside active games
+  allow-in-lobby: true
+  
+  # Allow players to use /shopedit inside an active arena
+  allow-in-game: true
+  
+  # Prevent players from accidentally spending resources while in edit mode
+  disable-purchases: true
+  
+  # Send the "layout saved" message to the Action Bar (above hotbar) instead of chat
+  # This avoids cluttering chat and avoids the Minecraft chat system indicator (white line)
+  send-save-to-actionbar: true
+
+# --------------------------------------------------------- #
+# /spectate Settings
+# --------------------------------------------------------- #
+spectate:
+  # Enable or disable the /spectate command
+  enabled: true
+  
+  # Allow spectating directly from the lobby
+  allow-from-lobby: true
+  
+  # Allow spectating players across different arenas
+  allow-cross-arena: true
+  
+  # Allow players who are currently ALIVE in a match to spectate
+  # (Requires permission krowntweaks.spectate.bypass if false)
+  allow-while-alive: false
+  
+  # Only allow spectating if the target's arena is in progress
+  require-running-game: true
+  
+  # Teleport delay in ticks after adding the spectator (1-20 ticks)
+  teleport-delay-ticks: 2
+
+# --------------------------------------------------------- #
+# Messages
+# Supports:
+#   - Standard legacy colors: &0-9, &a-f, &k-r
+#   - RGB / Hex color codes: &#FFAA00, <#FFAA00>, {#FFAA00}, #FFAA00
+#   - Color gradients: <gradient:#FF5555:#00AAFF>Your Text</gradient>
+# --------------------------------------------------------- #
+messages:
+  no-permission: "&cYou do not have permission to execute this command!"
+  player-only: "&cOnly players can execute this command!"
+  command-disabled: "&cThis command is currently disabled in the configuration."
+  
+  # /shopedit messages
+  shopedit-usage: "&cUsage: /shopedit [player]"
+  shopedit-opened-by-admin: "&eAn administrator opened your Quick Buy editor."
+  shopedit-cannot-in-game: "&cYou cannot edit your Quick Buy while actively in a match!"
+  shopedit-cannot-in-lobby: "&cYou cannot edit your Quick Buy while in the lobby!"
+  shopedit-buy-disabled: "&ePurchases are disabled in edit mode! Shift-click items to configure your Quick Buy."
+  shopedit-saved: "&aQuick Buy editor closed. Your changes have been saved!"
+  
+  # /spectate messages
+  spectate-usage: "&cUsage: /spectate <player>"
+  player-not-found: "&cPlayer &e{target} &cnot found or is offline!"
+  cannot-spectate-self: "&cYou cannot spectate yourself!"
+  target-not-in-bedwars: "&cPlayer &e{target} &cis not currently in a BedWars game!"
+  arena-not-running: "&cArena &e{arena} &cis not currently running!"
+  cannot-spectate-while-alive: "&cYou cannot spectate while alive in a BedWars match!"
+  teleported-to-target: "&aTeleported to &e{target}&a!"
+  spectating-success: "&aYou are now spectating &e{target} &ain arena &b{arena}&a!"
+  cannot-spectate-cross-arena: "&cSpectating across different arenas is not permitted!"
+  
+  # General & Admin
+  reload-success: "&aConfiguration successfully reloaded!"
+  mbedwars-not-found: "&cMarcely's Bedwars plugin was not found or is disabled!"

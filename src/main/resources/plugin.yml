@@ -1,0 +1,41 @@
+name: KrownTweaks
+version: 1.0.0
+main: com.krown.tweaks.KrownTweaksPlugin
+api-version: '1.21'
+depend: [MBedwars]
+authors: [Krown]
+description: KrownTweaks addon for Marcely's Bedwars on Minecraft 1.21.1 adding /shopedit and /spectate
+
+commands:
+  shopedit:
+    description: Open the HypixelV2 Quick Buy layout editor
+    aliases: [quickbuy, qb, shopeditor]
+    permission: krowntweaks.shopedit
+    usage: /shopedit [player]
+  spectate:
+    description: Spectate a player currently in a BedWars arena
+    aliases: [spec, bwspectate, watch]
+    permission: krowntweaks.spectate
+    usage: /spectate <player>
+  krowntweaks:
+    description: KrownTweaks administration command
+    aliases: [ktweaks, kt]
+    permission: krowntweaks.admin
+    usage: /krowntweaks <reload>
+
+permissions:
+  krowntweaks.shopedit:
+    description: Allows opening the Quick Buy editor
+    default: true
+  krowntweaks.shopedit.admin:
+    description: Allows opening the Quick Buy editor for other players
+    default: op
+  krowntweaks.spectate:
+    description: Allows spectating players in BedWars games
+    default: true
+  krowntweaks.spectate.bypass:
+    description: Allows spectating while still alive in an arena
+    default: op
+  krowntweaks.admin:
+    description: Allows administration commands like config reloading
+    default: op
